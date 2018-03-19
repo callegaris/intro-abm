@@ -11814,7 +11814,7 @@ automaton.</p>
 <p>One can already clearly see the difference between <em>behavioral
   rules</em> (that are the same for every cell) and actual <em>behavior</em>
 (which depends on internal state and on the environment).</p>
-<h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
+<h4 id="$\Longrightarrow$-See-game_of_life_DT.py-for-an-introductory-implementation.">$\Longrightarrow$ See <code>game_of_life_DT.py</code> for an introductory implementation.<a class="anchor-link" href="#$\Longrightarrow$-See-game_of_life_DT.py-for-an-introductory-implementation.">&#182;</a></h4><h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
 <li>what could be the meaning of these rules, if you think
 in (very loose) analogy with biological populations?</li>
 <li>how fast is the "speed of light" in the GoL
@@ -11883,7 +11883,7 @@ where $P_+ = P_- = \frac14$. An analogous result can be derived from the varianc
   some distance? what does this imply, if you give some real
   (physical) meaning to the space and time units of the simulation?</li>
 </ul>
-
+<h4 id="$\Longrightarrow$-See-random_walkers_DT.py.">$\Longrightarrow$ See <code>random_walkers_DT.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-See-random_walkers_DT.py.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -11925,7 +11925,7 @@ system.</p>
   speed of the agents?</li>
 </ul>
 <p>In this case, our model now yields
-\begin{equation}\tag{eq:rw}
+\begin{equation}
 \langle d^2\rangle^{1/2} = a \sqrt{P_m T}
 \end{equation}</p>
 <h2 id="Continuous-time">Continuous time<a class="anchor-link" href="#Continuous-time">&#182;</a></h2><p>Here we introduce the concept of <strong>waiting times</strong> in the *
@@ -12019,7 +12019,7 @@ $$
 if needed, implemented via a look-up table</li>
 <li>slice sampling and others (will not be used here)</li>
 </ul>
-<h4 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h4><ul>
+<h4 id="$\Longrightarrow$-See-random_walkers_CT.py.">$\Longrightarrow$ See <code>random_walkers_CT.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-See-random_walkers_CT.py.">&#182;</a></h4><h4 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h4><ul>
 <li>how do the results from the continuous-time and the
   discrete-time ABM compare to each other? how would you
   quantitatively compare them?</li>
@@ -12252,7 +12252,7 @@ $$
 \left&lt; \frac{{\rm d}N(t)}{{\rm d}t}\right&gt; = \alpha\langle
 N(t)\rangle - \beta\langle N(t)\rangle^2 - \beta\,\sigma_N^2
 $$
-i.e., with this stochastic ABM we are {\it underestimating} the growth
+i.e., with this stochastic ABM we are <em>underestimating</em> the growth
 rate compared to the classical model. The equilibrium population size
 is also lower than the classical $K$.  This is in addition to any
 discrepancy due to your choice of timestep.</p>
@@ -12267,7 +12267,7 @@ discrepancy due to your choice of timestep.</p>
 <h1 id="Fisher-Kolmogorov-Skellam-populations">Fisher-Kolmogorov-Skellam populations<a class="anchor-link" href="#Fisher-Kolmogorov-Skellam-populations">&#182;</a></h1><p>When random walk and logistic growth are combined into a single ABM,
 we get a discrete, stochastic version of the popular
 Fisher-Kolmogorov-Skellam population model.</p>
-<h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
+<h4 id="$\Longrightarrow$-See-verhulst_DT.py.">$\Longrightarrow$ See <code>verhulst_DT.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-See-verhulst_DT.py.">&#182;</a></h4><h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
 <li>what <strong>emergent property</strong> do you see in the population?</li>
 <li>how would you estimate the most important quantity
   related to such emergent phenomenon, using the parameters of the
@@ -12275,8 +12275,11 @@ Fisher-Kolmogorov-Skellam population model.</p>
 <li>test an ABM with constant birth and death probability,
   in which only one agent at a time can occupy a cell; offspring is
   created only if space is available in a neighboring cell</li>
+<li>carrying capacity can be an emergent property of the system, 
+  instead of being one of its input parameters; can you think of a way
+  to have it arise in a population?</li>
 </ul>
-
+<h4 id="$\Longrightarrow$-See-exclusion_CT.py-and-killers_CT.py-for-examples-of-emergent-carrying-capacity.">$\Longrightarrow$ See <code>exclusion_CT.py</code> and <code>killers_CT.py</code> for examples of emergent carrying capacity.<a class="anchor-link" href="#$\Longrightarrow$-See-exclusion_CT.py-and-killers_CT.py-for-examples-of-emergent-carrying-capacity.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -12290,7 +12293,7 @@ estimate an expected $K$ from the parameters of an ABM designed to
 test this hypothesis? Implement an ABM for "cows and grass" and compare
 to your expectations.</p>
 <h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
-<li>random walkers with BMR vs.~resource growth evolve their
+<li>random walkers with BMR vs. resource growth evolve their
 population-averaged movement rate (at birth, each cow inherits the
 mother agent's rate plus/minus some random variation); do they
 settle around an "optimum" move probability? what happens if you
@@ -12299,7 +12302,7 @@ add an energetic cost to each movement action?</li>
 <em>needs another agent at the same spatial location</em> in order to
 reproduce (a version of the <strong>Allee effect</strong>)?</li>
 </ul>
-
+<h4 id="$\Longrightarrow$-See-cows_grass_DT.py-and-cows_grass_CT.py.-For-a-more-complex-model,-check-out-cows_grass_evo_CT.py-in-which-the-cow-population-evolves-its-movement-probability-parameter-with-time.">$\Longrightarrow$ See <code>cows_grass_DT.py</code> and <code>cows_grass_CT.py</code>. For a more complex model, check out <code>cows_grass_evo_CT.py</code> in which the cow population evolves its movement probability parameter with time.<a class="anchor-link" href="#$\Longrightarrow$-See-cows_grass_DT.py-and-cows_grass_CT.py.-For-a-more-complex-model,-check-out-cows_grass_evo_CT.py-in-which-the-cow-population-evolves-its-movement-probability-parameter-with-time.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -12324,7 +12327,7 @@ and decreases with time and actions; a zero or negative energy leads
 to the wolf's death. Anisotropic movement can be introduced for sheep,
 wolves, or both; in the case of sheep, how would you introduce a
 preference for <em>low</em> wolf densities?</p>
-
+<h4 id="$\Longrightarrow$-Try-running-predprey_DT.py-a-few-times-and-check-for-different-emerging-behaviors!">$\Longrightarrow$ Try running <code>predprey_DT.py</code> a few times and check for different emerging behaviors!<a class="anchor-link" href="#$\Longrightarrow$-Try-running-predprey_DT.py-a-few-times-and-check-for-different-emerging-behaviors!">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -12370,7 +12373,7 @@ scenario: which behavioral rules would you add / change / remove?</li>
 S-I-S model, among others; what changes do you expect in the
 population's behavior?</li>
 </ul>
-
+<h4 id="$\Longrightarrow$-Compare-the-outcomes-of-contagion_DT.py-and-classic_SIR.py.">$\Longrightarrow$ Compare the outcomes of <code>contagion_DT.py</code> and <code>classic_SIR.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-Compare-the-outcomes-of-contagion_DT.py-and-classic_SIR.py.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -12408,13 +12411,14 @@ into the cows--grass system? do you expect that it will increase or
 decrease the carrying capacity? how does it change the spatial
 distribution and the time evolution of the population?</li>
 </ul>
-<p>When spatial or temporal patterns arise, two of the most common
+<h4 id="$\Longrightarrow$-Check-out-cows_grass_aniso_DT.py,-where-cows-tend-to-move-towards-higher-grass-densities,-and-compare-the-large-scale-system-behavior-with-that-of-cows_grass_DT.py,-where-cows-move-&quot;blind&quot;.">$\Longrightarrow$ Check out <code>cows_grass_aniso_DT.py</code>, where cows tend to move towards higher grass densities, and compare the large-scale system behavior with that of <code>cows_grass_DT.py</code>, where cows move "blind".<a class="anchor-link" href="#$\Longrightarrow$-Check-out-cows_grass_aniso_DT.py,-where-cows-tend-to-move-towards-higher-grass-densities,-and-compare-the-large-scale-system-behavior-with-that-of-cows_grass_DT.py,-where-cows-move-&quot;blind&quot;.">&#182;</a></h4><p>When spatial or temporal patterns arise, two of the most common
 analyses you can perform are the <em>2-point correlation function</em>
 and the <em>Fourier decomposition</em>. The latter is a standard analysis
 whose details can be found in many places, and is implemented in the
 <code>numpy.fft</code> library. The former measures the excess probability of
 finding two agents at some mutual distance, relative to the
-expectation due to a random distribution of the agents. A simple
+expectation due to a random distribution of agents on the same
+spatial domain. A simple
 formulation is the Landy-Szalay equation
 $$
 \xi(r) = \frac{DD - 2DR + RR}{RR}
@@ -12477,7 +12481,7 @@ the system approaches an optimum configuration</li>
 start at the same time, and one in which ants are gradually
 "injected" into the system from the origin?</li>
 </ul>
-<p>Flocks of birds and schools of fish exhibit collective motions, in
+<h4 id="$\Longrightarrow$-See-ants.py.">$\Longrightarrow$ See <code>ants.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-See-ants.py.">&#182;</a></h4><p>Flocks of birds and schools of fish exhibit collective motions, in
 which all individuals seem to agree on the direction followed by the
 group. This same level of self-organization can be achieved without
 memory, by using a short-range interaction ABM and some kind of 
@@ -12500,7 +12504,7 @@ flocks to arise when the "neighborhood" is large, or small?</li>
 <li>refine the ABM by including the fact that agents can
 only see the neighbors that they have in front (cutoff angle)</li>
 </ul>
-<p>We can modify the agents' behavioral rule slightly, by asking that
+<h4 id="$\Longrightarrow$-See-flock_DT.py-for-a-basic-model-of-bird-oids.">$\Longrightarrow$ See <code>flock_DT.py</code> for a basic model of bird-oids.<a class="anchor-link" href="#$\Longrightarrow$-See-flock_DT.py-for-a-basic-model-of-bird-oids.">&#182;</a></h4><p>We can modify the agents' behavioral rule slightly, by asking that
 they try to avoid close contact with others. This can be done by using
 a very short-range <em>repulsive force</em> between the agent.  If you
 add a preferred direction for each agent, this type of model is used
@@ -12537,7 +12541,7 @@ $u$ is our uniform random variable. The direction of the step will
 have to be chosen independently.</p>
 <h4 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h4><ul>
 <li>compare a Levy walk with a <strong>random walk with
-  persistence</strong> (also called <strong>correlated random walk</strong>), i.e.~a
+  persistence</strong> (also called <strong>correlated random walk</strong>), i.e. a
 random walk in which the agent is more likely to go in the same
 direction as the previous step(s); what are your expectations before
 you run the ABM?</li>
@@ -12556,7 +12560,7 @@ costs energy, find out if there is an optimal value of the Lévy
 scaling exponent $d$ (maximum efficiency), depending on the degree
 of patchiness in the environment</li>
 </ul>
-<p>The <strong>marginal value theorem</strong> (Charnov 1976) applies to the case of
+<h4 id="$\Longrightarrow$-A-basic-L&#233;vy-flight-model-in-continuous-time-is-implemented-in-levy.py.">$\Longrightarrow$ A basic L&#233;vy flight model in continuous time is implemented in <code>levy.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-A-basic-L&#233;vy-flight-model-in-continuous-time-is-implemented-in-levy.py.">&#182;</a></h4><p>The <strong>marginal value theorem</strong> (Charnov 1976) applies to the case of
 foraging with <em>diminishing returns</em> (i.e., the longer you stay in
 the same patch, the lower your food collection rate becomes): the
 predator should leave the patch when the marginal capture rate in the
@@ -12566,8 +12570,7 @@ habitat.</p>
 <h4 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h4><ul>
 <li>how would you test the marginal value theorem with a stochastic ABM?</li>
 </ul>
-<h1 id="Schelling's-segregation-model">Schelling's segregation model<a class="anchor-link" href="#Schelling's-segregation-model">&#182;</a></h1>
-<p>Schelling's 1971 segregation model was a pioneering work in showing
+<h1 id="Schelling's-segregation-model">Schelling's segregation model<a class="anchor-link" href="#Schelling's-segregation-model">&#182;</a></h1><p>Schelling's 1971 segregation model was a pioneering work in showing
 how collective behavior can emerge from simple agent-level rules. In
 it, agents belonging to one of two groups live on a grid with Moore
 neighborhood. An agent is <em>happy</em> about
@@ -12579,7 +12582,7 @@ unhappy, it is moved to a random empty location on the grid. The
 emergent result is that strong spatial segregation of group members
 can happen even with what could be considered a low intolerance level
 of each individual.</p>
-
+<h4 id="$\Longrightarrow$-See-schelling.py.">$\Longrightarrow$ See <code>schelling.py</code>.<a class="anchor-link" href="#$\Longrightarrow$-See-schelling.py.">&#182;</a></h4>
 </div>
 </div>
 </div>
