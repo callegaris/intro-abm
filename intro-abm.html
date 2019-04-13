@@ -11774,8 +11774,8 @@ attached to each cell, which can take the values <em>dead</em> (0) or
 by definition all cellular automata; moreover, in this model each cell
 variable can only have a discrete set of states (two).</p>
 <p>Any dynamical system has rules for its <strong>time evolution</strong>, i.e. a
-way to specify the state of the system at a time $t' &gt; t$ given the
-state of the system at time $t$ (and possibly even previous times, if
+way to specify the state of the system at a time \(t' &gt; t\) given the
+state of the system at time \(t\) (and possibly even previous times, if
 the system has <em>memory</em>) -- the word "evolution" here simply
 means "change as a function of time". In the case of a cellular
 automaton, cells cannot change relative position; they can only change
@@ -11786,9 +11786,9 @@ rectangular grid in 2 dimensions. Let's define a cell's <em>neighbors</em>
 as all the cells that are horizontally, vertically, or
 diagonally adjacent to that cell (this is called <em>Moore
   neighborhood</em>). The rules for GoL also assume <em>discrete time
-  steps</em>: the system "jumps" from the initial time $t$ to
-$(t + \tau)$, to $(t + \tau + \tau)$, and so on; or, alternatively,
-from timestep $T=1$ to $T=2$, then $T=3$ etc.</p>
+  steps</em>: the system "jumps" from the initial time \(t\) to
+\((t + \tau)\), to \((t + \tau + \tau)\), and so on; or, alternatively,
+from timestep \(T=1\) to \(T=2\), then \(T=3\) etc.</p>
 <p>Here are the rules:</p>
 <ul>
 <li>any dead cell with 3 alive neighbors becomes alive</li>
@@ -11804,7 +11804,7 @@ automaton.</p>
 <p>One can already clearly see the difference between <em>behavioral
   rules</em> (that are the same for every cell) and actual <em>behavior</em>
 (which depends on internal state and on the environment).</p>
-<h4 id="$\Longrightarrow$-See-game_of_life_DT.py-for-an-introductory-implementation.">$\Longrightarrow$ See <code>game_of_life_DT.py</code> for an introductory implementation.<a class="anchor-link" href="#$\Longrightarrow$-See-game_of_life_DT.py-for-an-introductory-implementation.">&#182;</a></h4><h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
+<h4 id="$\Longrightarrow$-See-game_of_life_DT.py-for-an-introductory-implementation.">\(\Longrightarrow\) See <code>game_of_life_DT.py</code> for an introductory implementation.<a class="anchor-link" href="#$\Longrightarrow$-See-game_of_life_DT.py-for-an-introductory-implementation.">&#182;</a></h4><h4 id="Questions">Questions<a class="anchor-link" href="#Questions">&#182;</a></h4><ul>
 <li>what could be the meaning of these rules, if you think
 in (very loose) analogy with biological populations?</li>
 <li>how fast is the "speed of light" in the GoL
